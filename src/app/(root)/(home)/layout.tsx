@@ -1,6 +1,15 @@
 import Navbar from '@/components/Navbar';
 import Sidebar from '@/components/Sidebar';
 import React, { ReactNode } from 'react';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "VMeet",
+  description: "VMeet is a video conferencing platform.",
+  icons:{
+    icon: '/icons/logo.svg'
+  }
+};
 
 const HomeLayout = ({children}: {children:ReactNode}) => {
   return (
